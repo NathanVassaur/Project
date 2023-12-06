@@ -1,7 +1,7 @@
 <?php
 $pageTitle = "Home";
 include "view-header.php";
-
+?>
 
   <div class="container text-center">
     <div class="row">
@@ -37,6 +37,6 @@ include "view-header.php";
       </div>
     </div>
   </div>
-
+<?php
 include "view-footer.php";
 ?>
