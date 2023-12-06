@@ -19,15 +19,7 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="/">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="instructors.php">Instructors</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="courses.php">Courses</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="instructors-with-courses.php">Instructors with courses</a>
-                        </li>
+                        
                         <li class="nav-item dropdown">
                           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Shop By Category
