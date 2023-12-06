@@ -17,7 +17,7 @@ include "view-header.php"
         $currentBrand = $brand;
       }
 
-      // Set $imagePath for the current cigar
+    
       $imagePath = "https://raw.githubusercontent.com/NathanVassaur/Project/main/images/" . $cigar['cigar_id'] . ".png";
     ?>
       <div class="col">
@@ -25,7 +25,7 @@ include "view-header.php"
           <?php if (imageExists($imagePath)) { ?>
             <img src="<?php echo $imagePath; ?>" class="card-img-top mx-auto d-block" alt="Cigar Image" style="max-width: 150px; height: 150px;">
           <?php } else { ?>
-            <!-- Placeholder image or alternative content -->
+           
             <div class="text-center" style="height: 150px;">
               <p>No Image Available</p>
             </div>
@@ -38,7 +38,7 @@ include "view-header.php"
         </div>
       </div>
     <?php
-    } // Closing brace for the while loop
+    } 
 
     function imageExists($url) {
       if (!empty($url)) {
