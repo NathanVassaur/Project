@@ -1,13 +1,13 @@
 <h1 class="mt-4"> All Cigars</h1>
 <div class="container text-center">
   <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
-    
+    <?php include "allcigars-newform-view.php"; ?>
     <?php
     while ($cigar = $cigars->fetch_assoc()) {
       $imagePath = "https://raw.githubusercontent.com/NathanVassaur/Project/main/images/" . $cigar['cigar_id'] . ".png";
     ?>
       <div class="col">
-      <?php include "allcigars-newform-view.php"; ?>
+      
         <div class="card mb-4 h-100">
           <?php if (imageExists($imagePath)) { ?>
             <img src="<?php echo $imagePath; ?>" class="card-img-top mx-auto d-block" alt="Cigar Image" style="max-width: 150px; height: 150px;">
