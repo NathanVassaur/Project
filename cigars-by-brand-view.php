@@ -7,18 +7,21 @@
     while ($cigar = $cigarsByBrand->fetch_assoc()) {
       $brand = $cigar['brand'];
 
-      // Display brand header if it's a new brand
+      
       if ($brand != $currentBrand) {
         echo "<h2 class='mt-3 col-md-12'>$brand</h2>";
         $currentBrand = $brand;
       }
+
+      
+      $imagePath = "https://raw.githubusercontent.com/NathanVassaur/Project/main/images/" . $cigar['cigar_id'] . ".png";
     ?>
       <div class="col">
         <div class="card mb-4">
           <?php if (imageExists($imagePath)) { ?>
             <img src="<?php echo $imagePath; ?>" class="card-img-top mx-auto d-block" alt="Cigar Image" style="max-width: 150px;">
           <?php } else { ?>
-            
+           
             <div class="text-center">
               <p>No Image Available</p>
             </div>
@@ -34,8 +37,12 @@
     } 
 
     function imageExists($url) {
+      if (!empty($url)) {
         $headers = get_headers($url);
         return stripos($headers[0], "200 OK") ? true : false;
+      } else {
+        return false;
+      }
     }
     ?>
   </div>
