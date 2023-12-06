@@ -1,3 +1,7 @@
+<?php
+include "view-header.php"
+  ?>
+
 <h1 class="mt-4">Cigars by Size</h1>
 <div class="container text-center">
   <div class="row mt-3">
@@ -47,4 +51,7 @@ function imageExists($url) {
   $headers = get_headers($url);
   return stripos($headers[0], "200 OK") ? true : false;
 }
+?>
+<?php
+include view-footer.php"
 ?>
