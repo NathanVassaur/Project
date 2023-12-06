@@ -8,11 +8,6 @@
         }
     </script>
 
-<script>
-    function showNewCigarModal() {
-        
-        $('#newCigarModal').modal('show');
-    }
-</script>
+
 </body>
 </html>
