@@ -22,7 +22,7 @@
             <p class="size"><?php echo 'Size: ' . $cigar['size']; ?></p>
             <p class="size"><?php echo 'In Stock: ' . $cigar['available'] . ' Price: $' . $cigar['price'] . '.00';?></p>
 
-            <?php "allcigars-editform-view.php" ?>
+            <?php include "allcigars-editform-view.php" ?>
             
 
             
