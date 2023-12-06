@@ -25,9 +25,9 @@
                             Shop By Category
                           </a>
                           <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="cigars-by-brand.php">Cigars By Brand</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="cigars-by-brand.php">By Brand</a></li>
+                            <li><a class="dropdown-item" href="cigars-by-size">By Size</a></li>
+                        
                           </ul>
                         </li>
                     </ul>
