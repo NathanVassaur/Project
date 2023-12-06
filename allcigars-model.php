@@ -25,4 +25,17 @@ function insertCigar($model, $brand, $size, $available, $price) {
         throw $e;
     }
 }
+function updateCigar($cid, $brand, $model, $size, $available, $price) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("UPDATE `Cigars` SET `brand`=?, `model`=?, `size`=?, `available`=?, `price`=? WHERE `cigar_id`=?");
+        $stmt->bind_param("sssiii", $brand, $model, $size, $available, $price, $cid);
+        $success = $stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
 ?>
