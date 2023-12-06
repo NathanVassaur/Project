@@ -12,4 +12,17 @@ function selectCigars() {
         throw $e;
     }
 }
+function insertCigar($model, $brand, $size, $available, $price) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("INSERT INTO `Cigars` (`model`, `brand`, `size`, `available`, `price`) VALUES (?, ?, ?, ?, ?)");
+        $stmt->bind_param("sssii", $model, $brand, $size, $available, $price);
+        $success = $stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
 ?>
