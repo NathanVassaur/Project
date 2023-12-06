@@ -1,7 +1,7 @@
 <?php
 $pageTitle = "Cigars";
 require_once("util-db.php");
-require_once("model-allcigars.php");
+require_once("allcigars-model.php");
 
 
 $cigars = selectCigars();
