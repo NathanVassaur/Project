@@ -29,6 +29,6 @@ if (isset ($_POST['actionType'])) {
 $cigars = selectCigars();
 include "allcigars-view.php";
 
-php include "view-footer.php"
+include "view-footer.php"
 ?>
 
