@@ -1,3 +1,5 @@
+<?php include "view-header.php" ?>
+
 <?php
 $pageTitle = "Cigars";
 require_once("util-db.php");
@@ -39,3 +41,4 @@ $cigars = selectCigars();
 include "allcigars-view.php";
 ?>
 
+<?php include "view-footer.php"?>
