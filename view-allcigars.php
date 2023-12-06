@@ -1,15 +1,16 @@
-<h1>Cigars</h1>
+
+<h1 class="mt-4">Cigars</h1>
 <div class="container text-center">
-  <div class="row">
+  <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
     <?php
     while ($cigar = $cigars->fetch_assoc()) {
     ?>
       <div class="col">
-        <div class="card" style="width: 18rem;">
+        <div class="card h-100">
           <!-- Image can be added here -->
           <div class="card-body">
-            <h5 class="card-title"><?php echo $cigar['model']; ?></h5>
-            <p class="brand"><?php echo 'Brand: ' . $cigar['brand']; ?></p>
+            <h5 class="card-title mb-3"><?php echo $cigar['model']; ?></h5>
+            <p class="brand mb-2"><?php echo 'Brand: ' . $cigar['brand']; ?></p>
             <p class="size"><?php echo 'Size: ' . $cigar['size']; ?></p>
             <!-- Button can be added here -->
           </div>
@@ -20,3 +21,4 @@
     ?>
   </div>
 </div>
+
