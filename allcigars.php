@@ -5,7 +5,7 @@ require_once("model-allcigars.php");
 
 
 $cigars = selectCigars();
-include "view-allcigars.php";
+include "allcigars-view.php";
 
 ?>
 
