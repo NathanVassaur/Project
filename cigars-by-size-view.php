@@ -53,5 +53,5 @@ function imageExists($url) {
 }
 ?>
 <?php
-include view-footer.php"
+include "view-footer.php"
 ?>
