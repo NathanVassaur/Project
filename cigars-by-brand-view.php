@@ -18,7 +18,7 @@
           <?php if (imageExists($imagePath)) { ?>
             <img src="<?php echo $imagePath; ?>" class="card-img-top mx-auto d-block" alt="Cigar Image" style="max-width: 150px;">
           <?php } else { ?>
-            <!-- Placeholder image or alternative content -->
+            
             <div class="text-center">
               <p>No Image Available</p>
             </div>
@@ -31,7 +31,9 @@
         </div>
       </div>
     <?php
-      function imageExists($url) {
+    } 
+
+    function imageExists($url) {
         $headers = get_headers($url);
         return stripos($headers[0], "200 OK") ? true : false;
     }
