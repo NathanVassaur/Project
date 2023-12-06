@@ -1,5 +1,5 @@
 <?php
-function selectCigars() {
+function selectBySizeCigars() {
     try {
         $conn = get_db_connection();
 
