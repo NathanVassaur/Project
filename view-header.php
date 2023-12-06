@@ -26,7 +26,7 @@
                           </a>
                           <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="cigars-by-brand.php">By Brand</a></li>
-                            <li><a class="dropdown-item" href="cigars-by-size">By Size</a></li>
+                            <li><a class="dropdown-item" href="cigars-by-size.php">By Size</a></li>
                         
                           </ul>
                         </li>
