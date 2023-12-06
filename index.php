@@ -4,7 +4,7 @@ include "view-header.php";
 ?>
 <h1>Homepage</h1>
 <?php
-  include "homepage.php";
+  include "allcigars.php";
 ?>
 <?php
 include "view-footer.php";
