@@ -22,9 +22,6 @@
             <p class="size"><?php echo 'Size: ' . $cigar['size']; ?></p>
             <p class="size"><?php echo 'In Stock: ' . $cigar['available'] . ' Price: $' . $cigar['price'] . '.00';?></p>
 
-             <button type="button" class="btn btn-primary btn-sm position-absolute top-0 end-0 m-2" data-bs-toggle="modal" data-bs-target="#editCigarModal<?php echo $cigar['cigar_id']; ?>">
-                Edit
-            </button>
             <?php include "allcigars-editform-view.php" ?>
             
 
