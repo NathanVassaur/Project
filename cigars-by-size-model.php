@@ -1,5 +1,5 @@
 <?php
-function selectBySizeCigars() {
+function selectCigarsBySize() {
     try {
         $conn = get_db_connection();
 
@@ -17,7 +17,7 @@ function selectBySizeCigars() {
 
         $conn->close();
 
-        return $cigarsResult;
+        return $cigarsBySize;
     } catch (Exception $e) {
         $conn->close();
         throw $e;
