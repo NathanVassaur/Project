@@ -10,7 +10,7 @@
           <?php if (imageExists($imagePath)) { ?>
             <img src="<?php echo $imagePath; ?>" class="card-img-top mx-auto d-block" alt="Cigar Image" style="max-width: 150px; height: 150px;">
           <?php } else { ?>
-            <!-- Placeholder image or alternative content -->
+            
             <div class="text-center" style="height: 150px;">
               <p>No Image Available</p>
             </div>
