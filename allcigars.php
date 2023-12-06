@@ -16,7 +16,7 @@ require_once("util-db.php");
 require_once("allcigars-model.php");
 
 // Handle form submissions for adding and editing cigars
-if (isset $_POST['actionType']) {
+if (isset ($_POST['actionType'])) {
     switch ($_POST['actionType']) {
         case "Add":
             if (insertCigar($_POST['cigarBrand'], $_POST['cigarModel'], $_POST['cigarSize'], $_POST['cigarAvailable'], $_POST['cigarPrice'])) {
