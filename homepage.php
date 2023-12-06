@@ -1,6 +1,5 @@
 <?php
 $pageTitle = "Home";
-include "view-header.php";
 ?>
 
   <div class="container text-center">
@@ -38,5 +37,5 @@ include "view-header.php";
     </div>
   </div>
 <?php
-include "view-footer.php";
+
 ?>
