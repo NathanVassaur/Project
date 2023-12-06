@@ -45,8 +45,3 @@
 </div>
 
 
-<script>
-    function showNewCigarModal() {
-        $('#newCigarModal').modal('show');
-    }
-</script>
