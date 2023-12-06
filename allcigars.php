@@ -1,6 +1,5 @@
 <?php
 $pageTitle = "Home";
-<?php
 require_once("util-db.php");
 require_once("model-allcigars.php");
 
