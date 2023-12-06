@@ -5,7 +5,7 @@
 $pageTitle = "Cigars";
 require_once("util-db.php");
 require_once("allcigars-model.php");
-
+include "view-header.php";
 
 if (isset ($_POST['actionType'])) {
     switch ($_POST['actionType']) {
