@@ -2,7 +2,7 @@
 function selectCigarsBySize() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT cigar_id, brand, model, size FROM `Cigars` ORDER BY size");
+        $stmt = $conn->prepare("SELECT size, COUNT(*) as size_count FROM `Cigars` GROUP BY size ORDER BY size_count DESC");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
