@@ -3,7 +3,7 @@
   <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
     <?php
     while ($cigar = $cigars->fetch_assoc()) {
-      $imagePath = "images/" . $cigar['cigar_id'] . ".png";
+      $imagePath = "images/" . $inventory['cigar_id'] . ".png";
     ?>
       <div class="col">
         <div class="card h-100">
