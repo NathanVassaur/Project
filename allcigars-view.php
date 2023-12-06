@@ -7,7 +7,7 @@
       $imagePath = "https://github.com/NathanVassaur/Project/blob/main/images/" . $cigar['cigar_id'] . ".png?raw=true";
     ?>
       <div class="col">
-        <div class="card mb-4"> <!-- Removed h-100 and added mb-4 for margin-bottom -->
+        <div class="card mb-4"> 
           <img src="<?php echo $imagePath; ?>" class="card-img-top" alt="Cigar Image">
           <div class="card-body">
             <h5 class="card-title mb-3"><?php echo $cigar['model']; ?></h5>
