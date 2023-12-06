@@ -20,7 +20,20 @@
             <p class="brand mb-2"><?php echo 'Brand: ' . $cigar['brand']; ?></p>
             <p class="size"><?php echo 'Size: ' . $cigar['size']; ?></p>
             <p class="size"><?php echo 'In Stock: ' . $cigar['available'] . ' Price: $' . $cigar['price'] . '.00';?></p>
-            <!-- Button can be added here -->
+            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+              <button type="button" class="btn btn-primary">1</button>
+              <button type="button" class="btn btn-primary">2</button>
+            
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                  <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
