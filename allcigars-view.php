@@ -7,7 +7,14 @@
     ?>
       <div class="col">
         <div class="card mb-4">
-          <img src="<?php echo $imagePath; ?>" class="card-img-top mx-auto d-block" alt="Cigar Image" style="max-width: 150px;">
+          <?php if (imageExists($imagePath)) { ?>
+            <img src="<?php echo $imagePath; ?>" class="card-img-top mx-auto d-block" alt="Cigar Image" style="max-width: 150px;">
+          <?php } else { ?>
+            <! placeholder -->
+            <div class="text-center">
+              
+            </div>
+          <?php } ?>
           <div class="card-body">
             <h5 class="card-title mb-3"><?php echo $cigar['model']; ?></h5>
             <p class="brand mb-2"><?php echo 'Brand: ' . $cigar['brand']; ?></p>
@@ -18,7 +25,11 @@
       </div>
     <?php
     }
+    
+    function imageExists($url) {
+        $headers = get_headers($url);
+        return stripos($headers[0], "200 OK") ? true : false;
+    }
     ?>
   </div>
 </div>
-
