@@ -1,8 +1,8 @@
 <?php
-function selectCigarsByBrand() {
+function selectCigarsBySize() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT cigar_id, brand, model, size FROM `Cigars` ORDER BY brand, model");
+        $stmt = $conn->prepare("SELECT cigar_id, brand, model, size FROM `Cigars` ORDER BY size");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
