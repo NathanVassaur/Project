@@ -1,11 +1,8 @@
 <form method="post" action="">
     <div class="mb-3">
-        <div class="input-group has-validation">
-            <span class="input-group-text">@</span>
-            <div class="form-floating">
-                <input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
-                <label for="email">Email</label>
-            </div>
+        <div class="form-floating has-validation">
+            <input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
+            <label for="email">Email</label>
         </div>
     </div>
     <div class="mb-3">
