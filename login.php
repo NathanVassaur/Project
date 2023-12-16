@@ -37,4 +37,13 @@ include "view-header.php";
     </div>
 </div>
 
+<script>
+    const loginModal = document.getElementById('loginModal');
+    const loginEmailInput = document.getElementById('loginEmail');
+
+    loginModal.addEventListener('shown.bs.modal', () => {
+        loginEmailInput.focus();
+    });
+</script>
+
 <?php include "view-footer.php"; ?>
