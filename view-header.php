@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?= $pageTitle ?></title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-KJ3o2DKIv5Kwfb/dr5b2dn1oflKzjqc/NonAzGozT1A="
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -14,6 +16,7 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="/">Navbar</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -28,7 +31,6 @@
                             <a class="nav-link active" aria-current="page" href="#"
                                 onclick="showPasswordModal()">Admin</a>
                         </li>
-
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
@@ -37,14 +39,8 @@
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="cigars-by-brand.php">By Brand</a></li>
                                 <li><a class="dropdown-item" href="cigars-by-size.php">By Size</a></li>
-                            </ul>
-                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="signup.php">Sign Up</a>
-                        </li>
-                        
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#" onclick="showLoginModal()">Login</a>
                         </li>
                     </ul>
                     <div class="dropdown">
@@ -66,10 +62,9 @@
         </nav>
     </div>
 
- 
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-eVl5Rxl3f5eaK1w2j4l47L4eJGG8u3L/A6QCHhigJt7qHkoSTY3S70qOVk6tAAbf"
         crossorigin="anonymous"></script>
 </body>
-
 </html>
