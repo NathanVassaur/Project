@@ -1,6 +1,3 @@
-<?php
-include "view-header.php";
-?>
 
 <div class="container mt-5">
     <h1>Login</h1>
