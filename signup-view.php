@@ -1,4 +1,4 @@
-<?php include "view-header.php"; ?>
+
 
 <h1 class="mt-4">Sign Up</h1>
 <div class="container text-center">
