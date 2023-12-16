@@ -28,21 +28,24 @@
           <div class="card-body" style="height: 150px;">
             <h5 class="card-title mb-3"><?php echo $cigar['model']; ?></h5>
             <p class="size"><?php echo 'Size: ' . $cigar['size'] . ' | Price: $' . $cigar['price'] . '.00'; ?></p>
-            <form method="post" action="">
-              <div class="form-floating">
-                <select class="form-select" name="quantity" id="quantitySelect" aria-label="Quantity">
-                  <?php
-                  // Populate options with numbers up to the available quantity
-                  for ($i = 1; $i <= $cigar['available']; $i++) {
-                    echo "<option value='$i'>$i</option>";
-                  }
-                  ?>
-                </select>
-                <label for="quantitySelect">Select Quantity</label>
-              </div>
-              <input type="hidden" name="cigarId" value="<?php echo $cigar['cigar_id']; ?>">
-              <button type="submit" class="btn btn-primary mt-2" name="actionType" value="AddToOrder">Add to Order</button>
-            </form>
+            
+            <div class="d-flex align-items-center">
+              <form method="post" action="" class="me-3">
+                <div class="form-floating">
+                  <select class="form-select" name="quantity" id="quantitySelect" aria-label="Quantity">
+                    <?php
+                    // Populate options with numbers up to the available quantity
+                    for ($i = 1; $i <= $cigar['available']; $i++) {
+                      echo "<option value='$i'>$i</option>";
+                    }
+                    ?>
+                  </select>
+                  <label for="quantitySelect" style="width: auto;">Select Quantity</label>
+                </div>
+                <input type="hidden" name="cigarId" value="<?php echo $cigar['cigar_id']; ?>">
+                <button type="submit" class="btn btn-primary mt-2" name="actionType" value="AddToOrder">Add to Order</button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
