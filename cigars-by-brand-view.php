@@ -29,22 +29,25 @@
             <h5 class="card-title mb-3"><?php echo $cigar['model']; ?></h5>
             <p class="size"><?php echo 'Size: ' . $cigar['size'] . ' | Price: $' . $cigar['price'] . '.00'; ?></p>
             
-            <div class="d-flex align-items-center">
-              <form method="post" action="" class="me-3">
-                <div class="form-floating">
-                  <select class="form-select" name="quantity" id="quantitySelect" aria-label="Quantity">
-                    <?php
-                    // Populate options with numbers up to the available quantity
-                    for ($i = 1; $i <= $cigar['available']; $i++) {
-                      echo "<option value='$i'>$i</option>";
-                    }
-                    ?>
-                  </select>
-                  <label for="quantitySelect" style="width: auto;">Select Quantity</label>
-                </div>
-                <input type="hidden" name="cigarId" value="<?php echo $cigar['cigar_id']; ?>">
-                <button type="submit" class="btn btn-primary mt-2" name="actionType" value="AddToOrder">Add to Order</button>
-              </form>
+           
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="form-floating" style="width: 120px;">
+                <select class="form-select" name="quantity" id="quantitySelect" aria-label="Quantity">
+                  <?php
+                 
+                  for ($i = 1; $i <= $cigar['available']; $i++) {
+                    echo "<option value='$i'>$i</option>";
+                  }
+                  ?>
+                </select>
+                <label for="quantitySelect">Qty</label>
+              </div>
+              <button type="button" class="btn btn-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+                  <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9z"/>
+                  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                </svg>
+              </button>
             </div>
           </div>
         </div>
