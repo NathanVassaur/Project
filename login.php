@@ -1,6 +1,6 @@
 <?php
 $pageTitle = "Login";
-include "view-header.php";
+
 ?>
 
 
