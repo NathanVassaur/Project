@@ -1,7 +1,7 @@
 <?php
 $pageTitle = "Login";
 include "view-header.php";
-?>
+
 
 
 <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
@@ -36,5 +36,5 @@ include "view-header.php";
         </div>
     </div>
 </div>
-
+?>
 <?php include "view-footer.php"; ?>
