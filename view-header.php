@@ -32,8 +32,9 @@
                             <li><a class="dropdown-item" href="cigars-by-size.php">By Size</a></li>
                         
                           </ul>
-                            
-                            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+                    
+                        </li>
+                        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
                                 <ul class="navbar-nav ms-auto">
                                     <li class="nav-item">
                                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#newCigarModal">
@@ -44,9 +45,7 @@
                                         </button>
                                     </li>
                                 </ul>
-                            </div>
-
-                        </li>
+                        </div>
                     </ul>
                 </div>
             </div>
