@@ -8,6 +8,14 @@
         }
     </script>
 
+<?php include "login.php"; ?>
+<script>
+    function showLoginModal() {
+        var loginModal = new bootstrap.Modal(document.getElementById('loginModal'));
+        loginModal.show();
+    }
+</script>
+
 
 </body>
 </html>
