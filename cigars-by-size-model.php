@@ -2,7 +2,7 @@
 function selectCigarsBySize() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT c.cigar_id, c.brand, c.model, c.size
+        $stmt = $conn->prepare("SELECT c.cigar_id, c.brand, c.model, c.size, c.available, c.price
                                 FROM `Cigars` c
                                 JOIN (
                                     SELECT size, COUNT(*) as size_count
