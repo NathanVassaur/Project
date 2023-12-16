@@ -9,7 +9,7 @@
     while ($cigar = $cigarsByBrand->fetch_assoc()) {
       $brand = $cigar['brand'];
 
-      // Display brand header if it's a new brand
+      
       if ($brand != $currentBrand) {
         echo "<h2 class='mt-3 col-md-12'>$brand</h2>";
         $currentBrand = $brand;
@@ -29,10 +29,22 @@
           <div class="card-body" style="height: 150px;">
             <h5 class="card-title mb-3"><?php echo $cigar['model']; ?></h5>
             <p class="size"><?php echo 'Size: ' . $cigar['size']; ?></p>
-            <!-- Add button for adding to the order -->
+
+            <!-- Form for selecting quantity and adding to cart -->
             <form method="post" action="add-to-order.php">
+              <div class="form-floating">
+                <select class="form-select" name="quantity" id="quantitySelect" aria-label="Quantity">
+                  <?php
+                  // Populate options with numbers up to the available quantity
+                  for ($i = 1; $i <= $cigar['available']; $i++) {
+                    echo "<option value='$i'>$i</option>";
+                  }
+                  ?>
+                </select>
+                <label for="quantitySelect">Select Quantity</label>
+              </div>
               <input type="hidden" name="cigarId" value="<?php echo $cigar['cigar_id']; ?>">
-              <button type="submit" class="btn btn-primary">Add to Order</button>
+              <button type="submit" class="btn btn-primary">Add to Cart</button>
             </form>
           </div>
         </div>
