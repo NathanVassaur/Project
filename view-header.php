@@ -44,9 +44,7 @@
                         </li>
                         
                         <li class="nav-item">
-                            <button class="nav-link btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
-                                Login
-                            </button>
+                            <a class="nav-link active" aria-current="page" href="#" onclick="showLoginModal()">Login</a>
                         </li>
                     </ul>
                     <div class="dropdown">
