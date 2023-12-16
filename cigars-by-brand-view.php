@@ -1,6 +1,4 @@
-<?php 
-include "view-header.php"
-?>
+<?php include "view-header.php"; ?>
 
 <h1 class="mt-4">Cigars by Brand</h1>
 <div class="container text-center">
@@ -17,7 +15,6 @@ include "view-header.php"
         $currentBrand = $brand;
       }
 
-    
       $imagePath = "https://raw.githubusercontent.com/NathanVassaur/Project/main/images/" . $cigar['cigar_id'] . ".png";
     ?>
       <div class="col">
@@ -25,7 +22,6 @@ include "view-header.php"
           <?php if (imageExists($imagePath)) { ?>
             <img src="<?php echo $imagePath; ?>" class="card-img-top mx-auto d-block" alt="Cigar Image" style="max-width: 150px; height: 150px;">
           <?php } else { ?>
-           
             <div class="text-center" style="height: 150px;">
               <p>No Image Available</p>
             </div>
@@ -33,12 +29,16 @@ include "view-header.php"
           <div class="card-body" style="height: 150px;">
             <h5 class="card-title mb-3"><?php echo $cigar['model']; ?></h5>
             <p class="size"><?php echo 'Size: ' . $cigar['size']; ?></p>
-            <!-- Button can be added here -->
+            <!-- Add button for adding to the order -->
+            <form method="post" action="add-to-order.php">
+              <input type="hidden" name="cigarId" value="<?php echo $cigar['cigar_id']; ?>">
+              <button type="submit" class="btn btn-primary">Add to Order</button>
+            </form>
           </div>
         </div>
       </div>
     <?php
-    } 
+    }
 
     function imageExists($url) {
       if (!empty($url)) {
@@ -52,7 +52,4 @@ include "view-header.php"
   </div>
 </div>
 
-
-<?php 
-include "view-footer.php"
-?>
+<?php include "view-footer.php"; ?>
