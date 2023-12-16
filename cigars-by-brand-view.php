@@ -28,7 +28,6 @@
           <div class="card-body" style="height: 150px;">
             <h5 class="card-title mb-3"><?php echo $cigar['model']; ?></h5>
             <p class="size"><?php echo 'Size: ' . $cigar['size'] . ' | Price: $' . $cigar['price'] . '.00'; ?></p>
-            <!-- Add the form for selecting quantity and the add to order button here -->
             <form method="post" action="">
               <div class="form-floating">
                 <select class="form-select" name="quantity" id="quantitySelect" aria-label="Quantity">
