@@ -31,9 +31,10 @@
             <p class="size"><?php echo 'Size: ' . $cigar['size']; ?></p>
 
             <form method="post" action="add-to-order.php">
-              <div class="form-floating">
+               <div class="form-floating">
                 <select class="form-select" name="quantity" id="quantitySelect" aria-label="Quantity">
                   <?php
+                  // Populate options with numbers up to the available quantity
                   for ($i = 1; $i <= $cigar['available']; $i++) {
                     echo "<option value='$i'>$i</option>";
                   }
