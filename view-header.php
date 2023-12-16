@@ -42,7 +42,6 @@
                         </li>
                     </ul>
 
-                    <!-- Move this div outside of the dropdown list -->
                     <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
