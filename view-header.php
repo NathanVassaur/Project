@@ -31,6 +31,10 @@
                             <a class="nav-link active" aria-current="page" href="#"
                                 onclick="showPasswordModal()">Admin</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"
+                                onclick="showLoginModal()">Admin</a>
+                        </li>
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
