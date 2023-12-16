@@ -42,6 +42,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="signup.php">Sign Up</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#" onclick="showLoginModal()">Login</a>
+                        </li>
                     </ul>
                     <div class="dropdown">
                         <button class="shoppingcart" type="button" data-bs-toggle="dropdown" aria-expanded="false">
