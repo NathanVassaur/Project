@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +16,6 @@
     <div class="container">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
                 <a class="navbar-brand" href="/">Navbar</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -31,6 +31,7 @@
                             <a class="nav-link active" aria-current="page" href="#"
                                 onclick="showPasswordModal()">Admin</a>
                         </li>
+
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
@@ -39,11 +40,10 @@
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="cigars-by-brand.php">By Brand</a></li>
                                 <li><a class="dropdown-item" href="cigars-by-size.php">By Size</a></li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="signup.php">Sign Up</a>
+                            </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#" onclick="showLoginModal()">Login</a>
+                            <a class="nav-link" href="signup.php">Sign Up</a>
                         </li>
                     </ul>
                     <div class="dropdown">
@@ -65,9 +65,10 @@
         </nav>
     </div>
 
-
+    <!-- Include Bootstrap JS after jQuery -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-eVl5Rxl3f5eaK1w2j4l47L4eJGG8u3L/A6QCHhigJt7qHkoSTY3S70qOVk6tAAbf"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
