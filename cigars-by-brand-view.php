@@ -9,7 +9,6 @@
     while ($cigar = $cigarsByBrand->fetch_assoc()) {
       $brand = $cigar['brand'];
 
-      
       if ($brand != $currentBrand) {
         echo "<h2 class='mt-3 col-md-12'>$brand</h2>";
         $currentBrand = $brand;
@@ -26,27 +25,24 @@
               <p>No Image Available</p>
             </div>
           <?php } ?>
-                      <div class="card-body" style="height: 150px;">
-                        <h5 class="card-title mb-3"><?php echo $cigar['model']; ?></h5>
-                        <p class="size"><?php echo 'Size: ' . $cigar['size'] . ' | Price: $' . $cigar['price'] . '.00'; ?></p>
-                        <!-- Add the form for selecting quantity and the add to order button here -->
-                        <div class="form-floating">
-                          <select class="form-select" name="quantity" id="quantitySelect" aria-label="Quantity">
-                            <?php
-                            // Populate options with numbers up to the available quantity
-                            for ($i = 1; $i <= $cigar['available']; $i++) {
-                              echo "<option value='$i'>$i</option>";
-                            }
-                            ?>
-                          </select>
-                          <label for="quantitySelect">Select Quantity</label>
-                        </div>
-                        <button type="button" class="btn btn-primary mt-2" onclick="addToOrder(<?php echo $cigar['cigar_id']; ?>)">Add to Order</button>
-                      </div>
-                      
-
+          <div class="card-body" style="height: 150px;">
+            <h5 class="card-title mb-3"><?php echo $cigar['model']; ?></h5>
+            <p class="size"><?php echo 'Size: ' . $cigar['size'] . ' | Price: $' . $cigar['price'] . '.00'; ?></p>
+            <!-- Add the form for selecting quantity and the add to order button here -->
+            <form method="post" action="">
+              <div class="form-floating">
+                <select class="form-select" name="quantity" id="quantitySelect" aria-label="Quantity">
+                  <?php
+                  // Populate options with numbers up to the available quantity
+                  for ($i = 1; $i <= $cigar['available']; $i++) {
+                    echo "<option value='$i'>$i</option>";
+                  }
+                  ?>
+                </select>
+                <label for="quantitySelect">Select Quantity</label>
+              </div>
               <input type="hidden" name="cigarId" value="<?php echo $cigar['cigar_id']; ?>">
-              <button type="submit" class="btn btn-primary">Add to Cart</button>
+              <button type="submit" class="btn btn-primary mt-2" name="actionType" value="AddToOrder">Add to Order</button>
             </form>
           </div>
         </div>
