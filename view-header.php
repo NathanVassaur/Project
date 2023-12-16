@@ -42,7 +42,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="signup.php">Sign Up</a>
                         </li>
-                        <!-- Include login button -->
+                        
                         <li class="nav-item">
                             <button class="nav-link btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
                                 Login
@@ -68,7 +68,7 @@
         </nav>
     </div>
 
-    <!-- Bootstrap JavaScript dependencies -->
+ 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-eVl5Rxl3f5eaK1w2j4l47L4eJGG8u3L/A6QCHhigJt7qHkoSTY3S70qOVk6tAAbf"
         crossorigin="anonymous"></script>
