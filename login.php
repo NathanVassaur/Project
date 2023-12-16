@@ -6,6 +6,12 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
+                <form id="emailForm">
+                    <div class="mb-3">
+                        <label for="emailInput" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="emailInput" name="email" required>
+                    </div>
+                </form>
                 <form id="passwordForm">
                     <div class="mb-3">
                         <label for="passwordInput" class="form-label">Password:</label>
