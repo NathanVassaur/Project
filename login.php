@@ -3,12 +3,11 @@ $pageTitle = "Login";
 include "view-header.php";
 ?>
 
-<!-- Button to trigger the modal -->
+
 <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
     Login
 </button>
 
-<!-- Login Modal -->
 <div class="modal fade" id="loginModal" aria-hidden="true" aria-labelledby="loginModalLabel" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
