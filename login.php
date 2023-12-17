@@ -27,15 +27,4 @@
     </div>
 </div>
 
-<script>
-    function checkPassword() {
-        var enteredPassword = document.getElementById('passwordInput').value;
-        var correctPassword = "admin";
 
-        if (enteredPassword === correctPassword) {
-            alert('Success');
-        } else {
-            alert('Incorrect email or password. Please try again.');
-        }
-    }
-</script>
